@@ -6,38 +6,72 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proyecto calculadora</title>
     <link rel="stylesheet" href="style.css">
+    
 </head>
 
 <body>
-   <p>Bienvenidos a calculadora</p>
+    
+        <svg>
+            <text x="50%" y="50%" dy=".35em" text-anchor="middle">
+                Bienvenido  a  calculadora
+            </text>
+        </svg>
+    
 
-    <div class="maincontainer">
+    <div class="container">
+        
+
         <div class="calculadora">
-            <div class="display">
-                <div id="valoranterior"></div>
-                <div id="valoractual"></div>
+
+        <div class="boxshadow">
+        <div id="operacionreal"></div>
+        <div id="txtresult"></div>
+        </div>
+
+            <div class="fila">
+            <button class="tecla" onclick="limpiar()">C</button>
+            <button class="tecla" onclick="sumar()">&larr;</button>
+            <button class="tecla" onclick="operacion('%')">%</button>
+            <button class="tecla" onclick="operacion('/')">÷</button>
             </div>
-            <button class="operador">C</button>
-            <button class="operador">&larr;</button>
-            <button class="operador">P</button>
-            <button class="numero">%</button>
-            <button class="numero">7</button>
-            <button class="numero">8</button>
-            <button class="numero">9</button>
-            <button class="operador">x</button>
-            <button class="numero">4</button>
-            <button class="numero">5</button>
-            <button class="numero">6</button>
-            <button class="operador">-</button>
-            <button class="numero">1</button>
-            <button class="numero">2</button>
-            <button class="numero">3</button>
-            <button class="operador">+</button>
-            <button class="numero">0</button>
-            <button class="numero">.</button>
-            <button class="operador">=</button>
+
+            <div class="fila">
+            <button class="tecla" onclick="operador('7')">7</button>
+            <button class="tecla" onclick="operador('8')">8</button>
+            <button class="tecla" onclick="operador('9')">9</button>
+            <button class="tecla" onclick="operacion('*')">*</button>
+            </div>
+
+            <div class="fila">
+            <button class="tecla" onclick="operador('4')">4</button>
+            <button class="tecla" onclick="operador('5')">5</button>
+            <button class="tecla" onclick="operador('6')">6</button>
+            <button class="tecla" onclick="operacion('-')">-</button>
+            </div>
+
+            <div class="fila">
+            <button class="tecla" onclick="operador('1')">1</button>
+            <button class="tecla" onclick="operador('2')">2</button>
+            <button class="tecla" onclick="operador('3')">3</button>
+            <button class="tecla" onclick="operador('+')">+</button>
+            </div>
+
+            <div class="fila">
+            <button class="tecla" onclick="operador('0')">0</button>
+            <button class="tecla" onclick="operador('.')">.</button>
+            <button class="tecla" onclick="calculo()">=</button>
+            </div>
+
+            
         </div>
     </div>
+
+
+
+
+    
+    <script src="script.js"></script>
+    
 </body>
 
 </html>
