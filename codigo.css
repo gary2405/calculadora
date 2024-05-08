@@ -1,0 +1,127 @@
+/*.header{
+    text-align: center;
+    font-size: 70px;
+    
+    }
+    
+    body{
+        
+        margin: 0;
+
+        
+        background: rgb(255,255,255);
+        background: linear-gradient(128deg, rgba(255,255,255,1) 22%, rgba(47,157,178,1) 100%);
+          
+          
+    }
+    
+    .container{
+        display: flex;
+        justify-content: center;
+        margin-top: 10%;
+        height: 100vh;
+        align-items: center;
+    }
+
+
+    #operacionreal{
+        background-color:  rgba(101, 100, 100, 0.936);
+        padding: 3px;
+        text-align: right;
+        font-size: 20px;
+        letter-spacing: 5px;
+    }
+    
+    
+    .calculadora{
+        display: grid;
+        grid-template-columns: repeat(4, 75px);
+        grid-template-rows: 160px repeat(5, 75px);
+        background-color: rgba(255, 255, 255, 0.171);
+        border-radius: 15px;
+        padding: 12px;
+        box-shadow: 5px 0px 10px 5px #00000014;
+        
+    }
+
+
+
+    
+    
+    button{
+        cursor: pointer;
+        margin: 5px;
+        border-radius: 15px;
+        font-size: 1.5em;
+        border: none;
+        background-color: rgba(255, 255, 255, 0);
+        
+        
+    }
+
+    button:active{
+        background-color: rgba(240, 248, 255, 0.203)
+    }
+    button:focus{
+        outline: none
+    }
+
+    
+    .display{
+        display: flex;
+        grid-column: 1 / -1;
+        padding: 16px;
+        margin: 10px 10px 20px;
+        flex-direction: column;
+        align-items: flex-end;
+        background-color: #5e5e5eab;
+        border-radius: 15px;
+        text-align: right;
+        justify-content: space-between;
+        word-break: break-all;
+        box-shadow: 0px 0px 0px 5px #3030302f;
+        
+    }
+
+
+    
+
+
+
+    @import url('https://fonts.googleapis.com/css?family=Source+Code+Pro');
+
+    body{
+      padding: 40px;
+      background-color: #121212;  
+      
+    }
+    
+    p {
+      border-right: solid 3px rgba(28, 30, 28, 0.75);
+      white-space: nowrap;
+      overflow: hidden;    
+      font-family: 'Source Code Pro', monospace;  
+      font-size: 34px;
+      color: rgba(23, 22, 22, 0.7);
+      margin-left: 28%;
+    }
+    
+    /* Animation */
+    p {
+      animation: animated-text 4s steps(29,end) 1s 1 normal both,
+                 animated-cursor 600ms steps(29,end) infinite;
+    }
+    
+    /* text animation */
+    
+    @keyframes animated-text{
+      from{width: 0;}
+      to{width: 472px;}
+    }
+    
+    /* cursor animations */
+    
+    @keyframes animated-cursor{
+      from{border-right-color: rgba(21, 21, 21, 0.75);}
+      to{border-right-color: transparent;}
+    }
