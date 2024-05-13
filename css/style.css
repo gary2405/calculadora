@@ -75,7 +75,35 @@
         box-shadow: 0px 0px 0px 5px #3030302f;
     }
     
-  
+    footer{
+    display: grid;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgba(255, 255, 255, 0.171);
+    padding: 3%;
+    color: rgb(240, 240, 240);
+    
+    }
+
+    hr{
+        width: 5%;
+        display: inline-block;
+        border: 1px solid rgb(240, 240, 240);
+        margin-top: -4px;
+        margin-bottom: 20px;
+    }
+    .text{
+    font-size: 13px;
+    color: rgb(240, 240, 240);
+    margin-top: 40px;
+    }
+
+    .iconos{
+        display: grid;
+        grid-template-columns: 50px 50px 50px 50px 50px;
+        margin-left: 38%;
+        font-size: x-large;
+    }
    
 
     @import url("https://fonts.googleapis.com/css2?family=Alata&display=swap");
